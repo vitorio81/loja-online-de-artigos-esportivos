@@ -7,15 +7,16 @@ export default function NavBar() {
         <Nav
             justified
             pills
+            className="navbar"
         >
             <NavItem>
-            <Link to="/" className="nav-link">VTM Sports</Link>
+            <Link to="/" className="nav-link nav-link-custom">VTM Sports</Link>
             </NavItem>
             <NavItem>
-                <input type="search" name="search-item" id="search-item" />
+                <input type="search" name="search-item" id="search-item" className="search-input-custom" placeholder="O que você procura?"/>
             </NavItem>
             <UncontrolledDropdown nav inNavbar>
-                <DropdownToggle nav caret>
+                <DropdownToggle nav caret className="dropdown-toggle-custom">
                     <strong>Entre ou cadastre-se</strong><br />Meus pedidos
                 </DropdownToggle>
                 <DropdownMenu right>
@@ -26,10 +27,10 @@ export default function NavBar() {
                 </DropdownMenu>
             </UncontrolledDropdown>
             <NavItem>
-            <Link to="/favorites" className="nav-link">Favoritos</Link>
+            <Link to="/favorites" className="nav-link nav-link-custom">Favoritos</Link>
             </NavItem>
             <NavItem>
-            <Link to="/cart" className="nav-link">Carrinho</Link>
+            <Link to="/cart" className="nav-link nav-link-custom">Carrinho</Link>
             </NavItem>
         </Nav>
     )

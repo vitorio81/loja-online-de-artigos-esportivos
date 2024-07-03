@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 export default function LinksCategory(){
     return (
-        <lu style={{display:"flex", flexWrap:"wrap", gap:"5rem" , justifyContent:"center"}}>
+        <lu className="linkscategory">
              <li>
                 <Link to="/products">Todos os Produtos</Link>
             </li>
