@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 export default function LinksCategory(){
     return (
-        <lu className="linkscategory">
+        <ul className="linkscategory">
              <li>
                 <Link to="/products">Todos os Produtos</Link>
             </li>
@@ -18,6 +18,6 @@ export default function LinksCategory(){
             <li>
                 <Link to="/otheracessories">Outros Acessórios</Link>
             </li>
-        </lu>
+        </ul>
     )
 }

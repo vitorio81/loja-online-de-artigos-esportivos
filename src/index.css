@@ -186,6 +186,75 @@ main {
   margin-top: 3rem;
 }
 
+.header-register{
+  height: 20vh;
+  font-size: 2rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #003785;
+  border-bottom: 1px solid #003785;
+}
+
+form{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0px auto;
+  width: 90vw;
+  gap: 2rem;
+  margin-top: 20px;
+}
+
+form > div {
+  display: flex;
+  justify-content: center;
+  width: 90vw;
+  gap: 2rem;
+  color: #003785;
+}
+
+form > div > div >  input,
+select {
+  border-radius: 10px;
+  height: 3rem;
+  width: 18rem;
+  background-color: #003785;
+}
+
+
+form > div > textarea {
+  background-color: white;
+  width: 70vw;
+  border-radius: 10px;
+  color: #003785;
+}
+
+
+.form-control {
+  background-color: #003785;
+  display: flex;
+  gap: 3rem;
+  color: white;
+}
+
+.button-submit {
+  background-color: #003785;
+  padding: 10px 30px;
+  width: 20rem;
+  border-radius: 10px;
+}
+
+.button-submit:hover {
+  background-color: #1465bb;
+  border: 2px solid #003785;
+}
+
+
+
+
+
+
    
 
 @media (prefers-color-scheme: light) {

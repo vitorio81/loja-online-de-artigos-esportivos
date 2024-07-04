@@ -10,6 +10,7 @@ import Cart from "./pages/Cart";
 import Favorites from "./pages/Favorites";
 import AdminHome from "./pages/admin/AdminHome";
 import Products from "./pages/categorys/Products";
+import AdminRegister from "./pages/admin/AdminRegister";
 
 const router = createBrowserRouter([
     {
@@ -46,6 +47,9 @@ const router = createBrowserRouter([
     } , {
         path: "/admin",
         element: <AdminHome/>
+    } , {
+        path: "/adminregister",
+        element: <AdminRegister/>
     }
 ])
 

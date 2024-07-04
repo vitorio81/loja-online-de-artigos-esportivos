@@ -19,7 +19,7 @@ export default function NavBar() {
                 <DropdownToggle nav caret className="dropdown-toggle-custom">
                     <strong>Entre ou cadastre-se</strong><br />Meus pedidos
                 </DropdownToggle>
-                <DropdownMenu right>
+                <DropdownMenu end>
                     <DropdownItem>Entre ou cadastre-se</DropdownItem>
                     <DropdownItem>Meus pedidos</DropdownItem>
                 <   DropdownItem divider />
