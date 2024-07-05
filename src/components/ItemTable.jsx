@@ -27,7 +27,7 @@ export default function ItemsTable() {
             <td style={{display:"flex",gap:"1rem", justifyContent:"center"}}>
               <Link to={`/items/${item.id}`}>
                 <Button color="success">
-                  <Link to="/products">Ver</Link>
+                  <Link to="/products" style={{color:"white"}}>Ver</Link>
                 </Button>
               </Link>
               <Link to={`/items/${item.id}/update`}>
