@@ -6,7 +6,7 @@ export const CATEGORIES = [
   ]
 
 export default class StockItem {
-    constructor ({name, descriptionsimples, descriptionlonga, quantity, price, category}) {
+    constructor ({name, descriptionsimples, descriptionlonga, quantity, price, category, img}) {
         this.id = Math.floor(Math.random() *1000000)
         this.name = name
         this.descriptionsimples = descriptionsimples
@@ -14,6 +14,7 @@ export default class StockItem {
         this.quantity = +quantity
         this.price = +price
         this.category = category
+        this.img = img
         this.createdAt = new Date()
         this.#validate()
     }
@@ -25,13 +26,15 @@ export default class StockItem {
         const validQuantity = typeof this.quantity === "number" && Number.isInteger(this.quantity)
         const validPrice = typeof this.price === "number"
         const validCategory = CATEGORIES.includes(this.category)
+        const validImg = typeof this.img === "string"
         if (!(
           validName &&
           validDescriptionSimples &&
           validDescriptionLonga &&
           validQuantity &&
           validPrice &&
-          validCategory
+          validCategory &&
+          validImg
         )) {
           throw new Error("Invalid item!")
         }

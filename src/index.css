@@ -197,59 +197,50 @@ main {
   border-bottom: 1px solid #003785;
 }
 
-form{
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0px auto;
+form {
   width: 90vw;
-  gap: 2rem;
-  margin-top: 20px;
-}
-
-form > div {
-  display: flex;
-  justify-content: center;
-  width: 90vw;
-  gap: 2rem;
-  color: #003785;
-}
-
-form > div > div >  input,
-select {
-  border-radius: 10px;
-  height: 3rem;
-  width: 18rem;
+  margin: 20px auto;
   background-color: #003785;
-}
-
-
-form > div > textarea {
-  background-color: white;
-  width: 70vw;
+  padding: 20px;
   border-radius: 10px;
-  color: #003785;
 }
 
-
-.form-control {
-  background-color: #003785;
-  display: flex;
-  gap: 3rem;
+form label {
   color: white;
 }
 
-.button-submit {
+table {
+  width: 90vw;
+  margin: 10px auto;
+  background-color: #1465bb;
+  
+  
+}
+
+table > thead {
   background-color: #003785;
-  padding: 10px 30px;
-  width: 20rem;
+  color: white;
+  text-align: center;
+  padding-bottom: 1px;
+}
+
+table > thead > tr > th {
+  border: 2px solid white;
   border-radius: 10px;
 }
 
-.button-submit:hover {
+table > tbody {
   background-color: #1465bb;
-  border: 2px solid #003785;
+  max-height: 7vh;
+  margin-top: 10px;
+
 }
 
+table > tbody > tr > td {
+  text-align: center;
+  color: white;
+  border: 1px solid white;
+}
 
 
 

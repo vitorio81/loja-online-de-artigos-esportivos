@@ -1,6 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import useStock from "../contexts/useStock";
 import PropTypes from "prop-types"
+import { Button } from 'reactstrap';
 
 DeleteButton.propTypes = {
     itemId: PropTypes.number,
@@ -19,8 +20,8 @@ export default function DeleteButton({itemId, itemName}) {
     }
     
     return (
-        <button onClick={handleDelete}>
+        <Button color="danger" onClick={handleDelete}>
             Excluir
-        </button>
+        </Button>
     )
 }

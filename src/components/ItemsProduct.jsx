@@ -11,8 +11,8 @@ export default function ItemsProduct () {
                 <ul style={{display:"flex", gap:"4rem", justifyContent:"center", flexWrap:"wrap"}}>
                     {items.map((item) => (
                         <li key={item.id}>
-                            <img src="../../imagens/98142905.avif" alt="" />
-                            <h5>{item.name}</h5>
+                            <img src={item.img} alt={item.name} />
+                            <h5 style={{marginTop:"2rem"}}>{item.name}</h5>
                             <p>{item.descriptionsimples}</p>
                             <p style={{marginTop:"2rem"}}>A partir de:</p>
                             <strong>

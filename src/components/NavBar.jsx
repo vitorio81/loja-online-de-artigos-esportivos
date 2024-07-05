@@ -22,6 +22,7 @@ export default function NavBar() {
                 <DropdownMenu end>
                     <DropdownItem>Entre ou cadastre-se</DropdownItem>
                     <DropdownItem>Meus pedidos</DropdownItem>
+                    <DropdownItem><Link to="/admin">pag.Admin</Link></DropdownItem>
                 <   DropdownItem divider />
                     <DropdownItem>Sair</DropdownItem>
                 </DropdownMenu>
